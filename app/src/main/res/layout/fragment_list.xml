@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="scanning"
+            type="Boolean" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_text_view"
+            style="@style/Widget.PSBLE.TextView.SubTitle.Bold"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/title_ble_available_devices"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{scanning ? View.VISIBLE : View.GONE}"
+            app:layout_constraintTop_toBottomOf="@+id/title_text_view">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/res_title_tv"
+                style="@style/Widget.PSBLE.TextView.Body.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:padding="@dimen/padding_medium"
+                android:text="@string/scanning_in_progress"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:trackThickness="@dimen/_4sdp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/padding_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_top"
+            tools:listitem="@layout/item_ble_card" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

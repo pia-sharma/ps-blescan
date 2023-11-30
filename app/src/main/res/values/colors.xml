@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorSecondary">#ffffff</color>
+    <color name="backgroundColor">#121212</color>
+
+    <color name="appBlack">#FF000000</color>
+    <color name="appWhite">#FFFFFFFF</color>
+
+    <color name="colorBlackAlpha">#7E000000</color>
+    <color name="colorBlue">#01579B</color>
+    <color name="colorBlueAlpha">#9C01579B</color>
+
+    <color name="colorDarkGrey">#4C4B4E</color>
+    <color name="colorGrey">#8F8F8F</color>
+    <color name="colorLightGrey">#C8C3C3</color>
+    <color name="cardBackgroundColor">#424141</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="textColor">@color/appBlack</color>
+    <color name="textColorWhite">@color/appWhite</color>
+    <color name="textColorBlack">@color/appBlack</color>
+    <color name="textColorGrey">@color/colorGrey</color>
+
+</resources>

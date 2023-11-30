@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget" />
+
+    <style name="Widget.PSBLE" />
+
+    <style name="Widget.PSBLE.TextView" />
+
+    <!--Toolbar Styles-->
+    <style name="Widget.PSBLE.TextView.Toolbar" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_toolbar</item>
+        <item name="fontFamily">@font/montserratmedium</item>
+    </style>
+
+    <!--SubTitle Styles-->
+    <style name="Widget.PSBLE.TextView.SubTitle" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_subtitle</item>
+        <item name="fontFamily">@font/montserratmedium</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!--Body-->
+    <style name="Widget.PSBLE.TextView.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <!--Caption-->
+    <style name="Widget.PSBLE.TextView.Content" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_content</item>
+        <item name="fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="Widget.PSBLE.TextView.SubTitle.Bold" parent="Widget.PSBLE.TextView.SubTitle">
+        <item name="fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="Widget.PSBLE.TextView.Body.White" parent="Widget.PSBLE.TextView.Body">
+        <item name="android:textColor">@color/textColorWhite</item>
+    </style>
+
+    <style name="Widget.PSBLE.TextView.Body.Medium" parent="Widget.PSBLE.TextView.Body">
+        <item name="fontFamily">@font/montserratmedium</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+    </style>
+
+    <!--Button Text Styles-->
+    <style name="buttonTextStyle" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/montserratmedium</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:textColor">@color/textColorWhite</item>
+    </style>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/select_sample">
+
+    <fragment
+        android:id="@+id/select_sample"
+        android:name="com.app.psble.ui.ble.SelectFragment"
+        android:label="Select Sample"
+        tools:layout="@layout/fragment_select">
+        <action
+            android:id="@+id/action_selectFragment_to_bleFragment"
+            app:destination="@id/nav_ble" />
+
+    </fragment>
+
+    <!--BLE-->
+    <fragment
+        android:id="@+id/nav_ble"
+        android:name="com.app.psble.ui.ble.BleFragment"
+        android:label="@string/title_ble_available_devices"
+        tools:layout="@layout/fragment_list">
+
+        <action
+            android:id="@+id/action_bleFragment_to_connectFragment"
+            app:destination="@id/nav_connect" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_connect"
+        android:name="com.app.psble.ui.ble.connect.ConnectBleFragment"
+        android:label="@string/title_ble_available_devices"
+        tools:layout="@layout/fragment_list">
+
+        <argument
+            android:name="bluetoothDevice"
+            app:argType="android.bluetooth.BluetoothDevice" />
+    </fragment>
+
+</navigation>

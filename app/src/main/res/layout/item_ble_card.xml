@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view"
+        style="@style/CardStyle">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_medium">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/count_tv"
+                style="@style/Widget.PSBLE.TextView.Body.White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="01"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/name_tv"
+                style="@style/Widget.PSBLE.TextView.Body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/padding_medium"
+                android:text="Name"
+                app:fontFamily="@font/montserrat_bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/count_tv"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/type_tv"
+                style="@style/Widget.PSBLE.TextView.Content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/padding_medium"
+                android:text="Type"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/name_tv"
+                app:layout_constraintTop_toBottomOf="@+id/name_tv" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/state_tv"
+                style="@style/Widget.PSBLE.TextView.Content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/padding_medium"
+                android:text="State"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/type_tv"
+                app:layout_constraintTop_toBottomOf="@+id/type_tv" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/address_tv"
+                style="@style/Widget.PSBLE.TextView.Content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/padding_medium"
+                android:text="Address"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/state_tv"
+                app:layout_constraintTop_toBottomOf="@+id/state_tv" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/uuid_tv"
+                style="@style/Widget.PSBLE.TextView.Content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/padding_medium"
+                android:text="UUID: "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/address_tv"
+                app:layout_constraintTop_toBottomOf="@+id/address_tv" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/rssi_tv"
+                style="@style/Widget.PSBLE.TextView.Content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/padding_medium"
+                android:text="RSSI: "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/uuid_tv"
+                app:layout_constraintTop_toBottomOf="@+id/uuid_tv" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>
