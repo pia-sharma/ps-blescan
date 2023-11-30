@@ -1,8 +1,7 @@
 # PS-BLE Scan
 The build to scan bluetooth device. It is written 100% in Kotlin!
 
-![ezgif com-video-to-gif](https://github.com/pia-sharma/ps-blescan/assets/130853965/24807006-de48-495e-a56b-dac5583e2bb5)
-
+<img src="[https://rel.codes/hud/101.gif]" width="280" height="500"> 
 
 ## Languages, libraries and tools used
 
